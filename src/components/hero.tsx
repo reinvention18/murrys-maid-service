@@ -31,48 +31,6 @@ export function Hero() {
 
       <div className="relative z-[2] grid grid-cols-1 md:grid-cols-[1.05fr_.95fr_1fr] gap-8 max-md:gap-0 items-end flex-1 max-w-[1320px] max-md:max-w-full w-full mx-auto">
 
-        {/* Sarah cutout - center (order 1 on mobile) */}
-        <div className="relative flex justify-center items-end max-md:items-center max-md:flex-col z-[4] max-md:order-1 max-md:mx-auto max-md:w-full max-md:max-w-[540px] max-md:p-0 md:m-0">
-          {/* Mobile-only floating logo above Sarah */}
-          <Image
-            src="/images/logo.png"
-            alt="Murry's Maid Service"
-            width={290}
-            height={290}
-            className="hidden max-md:block w-[min(290px,74vw)] max-[480px]:w-[min(240px,68vw)] h-auto mx-auto mb-1 animate-logo-float drop-shadow-[0_8px_24px_rgba(58,139,30,.18)]"
-          />
-
-          {/* Sparkle doodles */}
-          <span className="absolute text-gold z-[3] pointer-events-none animate-twink top-[14%] max-md:top-[10%] left-[8%] max-md:left-[10%] text-2xl max-md:text-[22px]">✦</span>
-          <span className="absolute text-blush-deep z-[3] pointer-events-none animate-twink top-[6%] max-md:top-[24%] right-[6%] max-md:right-[8%] text-[30px] max-md:text-[26px] [animation-delay:.6s]">✿</span>
-
-          {/* Mobile-only spotlight */}
-          <span className="hidden max-md:block absolute left-1/2 bottom-[-10px] -translate-x-1/2 w-[min(400px,82vw)] h-[min(400px,82vw)] rounded-full bg-[radial-gradient(circle_at_50%_45%,#fff_0%,rgba(255,255,255,.92)_22%,rgba(190,228,155,.7)_50%,rgba(190,228,155,0)_72%)] z-[1] animate-spot-pulse" />
-
-          {/* Mobile-only dashed rings */}
-          <span className="hidden max-md:block absolute left-1/2 bottom-[-6px] -translate-x-1/2 w-[min(380px,78vw)] h-[min(380px,78vw)] rounded-full border-[1.5px] border-dashed border-leaf/[.28] z-[2] animate-ring-spin after:content-[''] after:absolute after:inset-3.5 after:rounded-full after:border after:border-dashed after:border-blush-deep/[.32]" />
-
-          {/* Mobile-only sparkle bubbles */}
-          <span className="hidden max-md:block absolute z-[4] animate-bub-float top-[24%] left-[6%] text-2xl [text-shadow:0_2px_8px_rgba(255,255,255,.7)]">✨</span>
-          <span className="hidden max-md:block absolute z-[4] animate-bub-float top-[38%] right-[6%] text-[30px] [animation-delay:1.2s] [text-shadow:0_2px_8px_rgba(255,255,255,.7)]">✨</span>
-          <span className="hidden max-md:block absolute z-[4] animate-bub-float top-[64%] left-[2%] text-xl [animation-delay:2.2s] [text-shadow:0_2px_8px_rgba(255,255,255,.7)]">✨</span>
-
-          {/* Sarah image */}
-          <Image
-            src="/images/sarah-hero.png"
-            alt="Sarah, founder of Murry's Maid Service"
-            width={760}
-            height={1000}
-            className="relative z-[3] w-[min(760px,62vw)] max-md:w-[min(440px,86vw)] max-[480px]:w-[min(360px,88vw)] h-auto drop-shadow-[0_28px_38px_rgba(14,31,21,.18)] max-md:drop-shadow-[0_30px_36px_rgba(58,139,30,.18)] max-md:[mask-image:linear-gradient(180deg,#000_80%,rgba(0,0,0,.6)_92%,rgba(0,0,0,0)_100%)]"
-            priority
-          />
-
-          {/* Desktop-only spotlight circle */}
-          <span className="hidden md:block absolute left-1/2 bottom-0 w-[min(520px,46vw)] h-[min(520px,46vw)] rounded-full bg-[radial-gradient(circle_at_50%_45%,#fff_0%,rgba(255,255,255,.92)_22%,rgba(190,228,155,.7)_50%,rgba(190,228,155,0)_72%)] -translate-x-1/2 z-[1] animate-spot-pulse" />
-          {/* Desktop-only dashed ring */}
-          <span className="hidden md:block absolute left-1/2 bottom-2 w-[min(480px,42vw)] h-[min(480px,42vw)] rounded-full border-[1.5px] border-dashed border-leaf/[.22] -translate-x-1/2 z-[2] animate-ring-spin pointer-events-none" />
-        </div>
-
         {/* Left column - copy (order 2 on mobile) */}
         <div className="relative z-[3] pb-0 md:pb-10 max-md:order-2 max-md:pt-[34px] max-md:px-1 max-md:text-center">
           <div className="inline-flex items-center gap-3 mb-7 max-md:mb-[18px] max-md:justify-center">
@@ -131,6 +89,48 @@ export function Hero() {
               <span className="text-xs max-md:text-[10px] tracking-[.16em] uppercase text-ink-2 font-medium">Sister-owned</span>
             </div>
           </div>
+        </div>
+
+        {/* Sarah cutout - center (order 1 on mobile) */}
+        <div className="relative flex justify-center items-end max-md:items-center max-md:flex-col z-[4] max-md:order-1 max-md:mx-auto max-md:w-full max-md:max-w-[540px] max-md:p-0 md:m-0">
+          {/* Mobile-only floating logo above Sarah */}
+          <Image
+            src="/images/logo.png"
+            alt="Murry's Maid Service"
+            width={290}
+            height={290}
+            className="hidden max-md:block w-[min(290px,74vw)] max-[480px]:w-[min(240px,68vw)] h-auto mx-auto mb-1 animate-logo-float drop-shadow-[0_8px_24px_rgba(58,139,30,.18)]"
+          />
+
+          {/* Sparkle doodles */}
+          <span className="absolute text-gold z-[3] pointer-events-none animate-twink top-[14%] max-md:top-[10%] left-[8%] max-md:left-[10%] text-2xl max-md:text-[22px]">✦</span>
+          <span className="absolute text-blush-deep z-[3] pointer-events-none animate-twink top-[6%] max-md:top-[24%] right-[6%] max-md:right-[8%] text-[30px] max-md:text-[26px] [animation-delay:.6s]">✿</span>
+
+          {/* Mobile-only spotlight */}
+          <span className="hidden max-md:block absolute left-1/2 bottom-[-10px] -translate-x-1/2 w-[min(400px,82vw)] h-[min(400px,82vw)] rounded-full bg-[radial-gradient(circle_at_50%_45%,#fff_0%,rgba(255,255,255,.92)_22%,rgba(190,228,155,.7)_50%,rgba(190,228,155,0)_72%)] z-[1] animate-spot-pulse" />
+
+          {/* Mobile-only dashed rings */}
+          <span className="hidden max-md:block absolute left-1/2 bottom-[-6px] -translate-x-1/2 w-[min(380px,78vw)] h-[min(380px,78vw)] rounded-full border-[1.5px] border-dashed border-leaf/[.28] z-[2] animate-ring-spin after:content-[''] after:absolute after:inset-3.5 after:rounded-full after:border after:border-dashed after:border-blush-deep/[.32]" />
+
+          {/* Mobile-only sparkle bubbles */}
+          <span className="hidden max-md:block absolute z-[4] animate-bub-float top-[24%] left-[6%] text-2xl [text-shadow:0_2px_8px_rgba(255,255,255,.7)]">✨</span>
+          <span className="hidden max-md:block absolute z-[4] animate-bub-float top-[38%] right-[6%] text-[30px] [animation-delay:1.2s] [text-shadow:0_2px_8px_rgba(255,255,255,.7)]">✨</span>
+          <span className="hidden max-md:block absolute z-[4] animate-bub-float top-[64%] left-[2%] text-xl [animation-delay:2.2s] [text-shadow:0_2px_8px_rgba(255,255,255,.7)]">✨</span>
+
+          {/* Sarah image */}
+          <Image
+            src="/images/sarah-hero.png"
+            alt="Sarah, founder of Murry's Maid Service"
+            width={760}
+            height={1000}
+            className="relative z-[3] w-[min(760px,62vw)] max-md:w-[min(440px,86vw)] max-[480px]:w-[min(360px,88vw)] h-auto drop-shadow-[0_28px_38px_rgba(14,31,21,.18)] max-md:drop-shadow-[0_30px_36px_rgba(58,139,30,.18)] max-md:[mask-image:linear-gradient(180deg,#000_80%,rgba(0,0,0,.6)_92%,rgba(0,0,0,0)_100%)]"
+            priority
+          />
+
+          {/* Desktop-only spotlight circle */}
+          <span className="hidden md:block absolute left-1/2 bottom-0 w-[min(520px,46vw)] h-[min(520px,46vw)] rounded-full bg-[radial-gradient(circle_at_50%_45%,#fff_0%,rgba(255,255,255,.92)_22%,rgba(190,228,155,.7)_50%,rgba(190,228,155,0)_72%)] -translate-x-1/2 z-[1] animate-spot-pulse" />
+          {/* Desktop-only dashed ring */}
+          <span className="hidden md:block absolute left-1/2 bottom-2 w-[min(480px,42vw)] h-[min(480px,42vw)] rounded-full border-[1.5px] border-dashed border-leaf/[.22] -translate-x-1/2 z-[2] animate-ring-spin pointer-events-none" />
         </div>
 
         {/* Right column - testimonial (order 3 on mobile) */}
