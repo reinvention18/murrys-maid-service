@@ -29,12 +29,13 @@ export function Nav() {
   return (
     <>
       <nav
-        className={`fixed inset-x-0 top-0 z-[90] grid grid-cols-[auto_1fr_auto] items-center gap-7 transition-all duration-300 ${
+        className={`fixed inset-x-0 top-0 z-[90] transition-all duration-300 ${
           shrunk
-            ? "max-md:bg-[rgba(195,255,249,.92)] md:bg-paper/85 backdrop-blur-[18px] max-md:py-2.5 md:py-2.5 px-14 max-md:px-[18px] shadow-[0_1px_0_rgba(14,31,21,.06)]"
-            : "py-[18px] px-14 max-md:px-[18px] max-md:bg-transparent max-md:shadow-none"
+            ? "max-md:bg-[rgba(195,255,249,.92)] md:bg-paper/85 backdrop-blur-[18px] max-md:py-2.5 md:py-2.5 px-9 max-md:px-[18px] shadow-[0_1px_0_rgba(14,31,21,.06)]"
+            : "py-[18px] px-9 max-md:px-[18px] max-md:bg-transparent max-md:shadow-none"
         }`}
       >
+        <div className="max-w-[1320px] mx-auto grid grid-cols-[auto_1fr_auto] items-center gap-7">
         {/* Brand / Logo */}
         <a
           href="#top"
@@ -45,10 +46,10 @@ export function Nav() {
           <Image
             src="/images/logo.png"
             alt="Murry's"
-            width={120}
-            height={120}
+            width={140}
+            height={140}
             className={`transition-all duration-300 ${
-              shrunk ? "h-[72px] max-md:h-[42px] w-auto" : "h-[120px] max-md:h-[42px] w-auto"
+              shrunk ? "h-[78px] max-md:h-[42px] w-auto" : "h-[140px] max-md:h-[42px] w-auto"
             }`}
             priority
           />
@@ -108,6 +109,7 @@ export function Nav() {
             />
           </span>
         </button>
+        </div>
       </nav>
 
       {/* Full-screen mobile menu */}
