@@ -33,7 +33,7 @@ export function Hero() {
 
         {/* Left column - copy (order 2 on mobile) */}
         <div className="relative z-[3] pb-0 md:pb-10 max-md:order-2 max-md:pt-[34px] max-md:px-1 max-md:text-center">
-          <div className="inline-flex items-center gap-3 mb-7 max-md:mb-[18px] max-md:justify-center">
+          <div className="inline-flex items-center gap-3 mb-3 max-md:mb-[18px] max-md:justify-center">
             <span className="font-hand text-[32px] text-leaf -rotate-2">hi! we&apos;re Murry&apos;s.</span>
             <span className="w-[60px] h-px bg-ink opacity-40" />
             <span className="text-[11px] tracking-[.32em] uppercase font-semibold">St. Louis</span>
