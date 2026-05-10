@@ -32,7 +32,7 @@ export function Hero() {
       <div className="relative z-[2] grid grid-cols-1 md:grid-cols-[1.05fr_.95fr_1fr] gap-8 max-md:gap-0 items-end flex-1 max-w-[1320px] max-md:max-w-full w-full mx-auto">
 
         {/* Left column - copy (order 2 on mobile) */}
-        <div className="relative z-[3] pb-0 md:pb-10 max-md:order-2 max-md:pt-[34px] max-md:px-1 max-md:text-center">
+        <div className="relative z-[5] pb-0 md:pb-10 max-md:order-2 max-md:pt-[34px] max-md:px-1 max-md:text-center">
           <div className="inline-flex items-center gap-3 mb-3 max-md:mb-[18px] max-md:justify-center">
             <span className="font-hand text-[32px] text-leaf -rotate-2">hi! we&apos;re Murry&apos;s.</span>
             <span className="w-[60px] h-px bg-ink opacity-40" />
@@ -134,7 +134,7 @@ export function Hero() {
         </div>
 
         {/* Right column - testimonial (order 3 on mobile) */}
-        <div className="relative z-[3] pb-0 md:pb-[60px] flex flex-col items-center md:items-start justify-end gap-6 max-md:order-3 max-md:py-6 max-md:pb-10">
+        <div className="relative z-[5] pb-0 md:pb-[60px] flex flex-col items-center md:items-start justify-end gap-6 max-md:order-3 max-md:py-6 max-md:pb-10">
           {/* Testimonial card */}
           <div className="bg-cream p-6 rounded-[18px] shadow-md w-[280px] max-md:w-full max-md:max-w-[340px] relative text-left rotate-2 max-md:-rotate-1 transition-transform duration-[400ms] hover:rotate-0 hover:scale-[1.04] max-md:mx-auto">
             <span className="absolute top-[-22px] left-[18px] font-display text-[62px] leading-[.7] text-blush">&ldquo;</span>
