@@ -7,6 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "981px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       colors: {
         paper: "#faf5e8",
@@ -66,6 +73,21 @@ const config: Config = {
           "0%": { transform: "translateY(0) rotate(0deg)" },
           "100%": { transform: "translateY(120vh) rotate(720deg)", opacity: "0" },
         },
+        spotPulse: {
+          "0%, 100%": { transform: "translateX(-50%) scale(1)" },
+          "50%": { transform: "translateX(-50%) scale(1.04)" },
+        },
+        ringSpin: {
+          to: { transform: "translateX(-50%) rotate(360deg)" },
+        },
+        logoFloat: {
+          "0%, 100%": { transform: "translateY(0) rotate(-1deg)" },
+          "50%": { transform: "translateY(-6px) rotate(1deg)" },
+        },
+        bubFloat: {
+          "0%, 100%": { transform: "translateY(0) rotate(-6deg)", opacity: "0.7" },
+          "50%": { transform: "translateY(-12px) rotate(8deg)", opacity: "1" },
+        },
       },
       animation: {
         roll: "roll 32s linear infinite",
@@ -75,6 +97,10 @@ const config: Config = {
         bob: "bob 2.4s infinite ease-in-out",
         pulse: "pulse 2s infinite",
         fall: "fall 2.4s ease-in forwards",
+        "spot-pulse": "spotPulse 5s ease-in-out infinite",
+        "ring-spin": "ringSpin 30s linear infinite",
+        "logo-float": "logoFloat 6s ease-in-out infinite",
+        "bub-float": "bubFloat 4s ease-in-out infinite",
       },
     },
   },
