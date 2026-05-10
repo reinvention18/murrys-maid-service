@@ -23,7 +23,7 @@ export function Hero() {
   }, [rotate]);
 
   return (
-    <section className="relative pt-[200px] max-md:pt-24 max-[480px]:pt-[84px] px-9 max-md:px-[18px] max-[480px]:px-3.5 overflow-hidden min-h-screen max-md:min-h-0 flex flex-col" id="top">
+    <section className="relative pt-[165px] max-md:pt-24 max-[480px]:pt-[84px] px-9 max-md:px-[18px] max-[480px]:px-3.5 overflow-hidden min-h-screen max-md:min-h-0 flex flex-col" id="top">
       {/* Giant background M (hidden on mobile) */}
       <div className="hidden md:block absolute font-display text-[min(78vw,820px)] leading-[.7] text-transparent [-webkit-text-stroke:1.5px_rgba(15,82,54,.07)] top-[-2%] left-[-4%] pointer-events-none z-0 -rotate-[4deg]">
         M
