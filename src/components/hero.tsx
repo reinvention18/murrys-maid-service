@@ -134,7 +134,7 @@ export function Hero() {
         </div>
 
         {/* Right column - testimonial (order 3 on mobile) */}
-        <div className="relative z-[3] pb-0 md:pb-[60px] flex flex-col items-center md:items-end justify-end gap-6 max-md:order-3 max-md:py-6 max-md:pb-10">
+        <div className="relative z-[3] pb-0 md:pb-[60px] flex flex-col items-center md:items-start justify-end gap-6 max-md:order-3 max-md:py-6 max-md:pb-10">
           {/* Testimonial card */}
           <div className="bg-cream p-6 rounded-[18px] shadow-md w-[280px] max-md:w-full max-md:max-w-[340px] relative text-left rotate-2 max-md:-rotate-1 transition-transform duration-[400ms] hover:rotate-0 hover:scale-[1.04] max-md:mx-auto">
             <span className="absolute top-[-22px] left-[18px] font-display text-[62px] leading-[.7] text-blush">&ldquo;</span>
